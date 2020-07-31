@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Gyro2AWSIoT.srcs/sources_1/ip/clk_wiz_0" \
+"../../../../Gyro2AWSIoT.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
+"../../../../Gyro2AWSIoT.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" \
+"../../../../Gyro2AWSIoT.srcs/sim_1/new/testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

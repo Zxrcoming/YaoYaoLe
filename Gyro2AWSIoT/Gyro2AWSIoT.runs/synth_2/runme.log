@@ -1,0 +1,612 @@
+
+*** Running vivado
+    with args -log Gyro_Demo.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Gyro_Demo.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source Gyro_Demo.tcl -notrace
+Command: synth_design -top Gyro_Demo -part xc7s15ftgb196-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12352 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 684.699 ; gain = 177.898
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Gyro_Demo' [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Gyro_Demo.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/shixi/Gyro2AWSIoT/Gyro2AWSIoT.runs/synth_2/.Xil/Vivado-9940-Zxrcoming/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [D:/shixi/Gyro2AWSIoT/Gyro2AWSIoT.runs/synth_2/.Xil/Vivado-9940-Zxrcoming/realtime/clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-7023] instance 'clk_10' of module 'clk_wiz_0' has 5 connections declared, but only 3 given [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Gyro_Demo.v:100]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [D:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:36115]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (2#1) [D:/vivado/Vivado/2019.1/scripts/rt/data/unisim_comp.v:36115]
+INFO: [Synth 8-6157] synthesizing module 'Driver_Gyro' [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Driver_Gyro.v:31]
+	Parameter State_Init bound to: 0 - type: integer 
+	Parameter State_Temp bound to: 1 - type: integer 
+	Parameter State_Gyro bound to: 2 - type: integer 
+	Parameter State_Mag bound to: 3 - type: integer 
+	Parameter State_Stop bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Clk_Division' [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Clk_Division.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Clk_Division' (3#1) [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Clk_Division.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Driver_Gyro.v:129]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Driver_Gyro.v:278]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Driver_Gyro.v:292]
+WARNING: [Synth 8-6014] Unused sequential element Read_Req_reg was removed.  [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Driver_Gyro.v:180]
+WARNING: [Synth 8-6014] Unused sequential element Write_Req_reg was removed.  [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Driver_Gyro.v:210]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_Gyro' (4#1) [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Driver_Gyro.v:31]
+INFO: [Synth 8-6157] synthesizing module 'Driver_IIC' [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Driver_IIC.v:22]
+	Parameter SCL_SUM bound to: 13'b0001111101000 
+	Parameter IDLE bound to: 5'b00000 
+	Parameter START0 bound to: 5'b00001 
+	Parameter WRSADDR0 bound to: 5'b00010 
+	Parameter ACK0 bound to: 5'b00011 
+	Parameter WRRADDR bound to: 5'b00100 
+	Parameter ACK1 bound to: 5'b00101 
+	Parameter WRDATA bound to: 5'b00110 
+	Parameter ACK2 bound to: 5'b00111 
+	Parameter STOP bound to: 5'b01000 
+	Parameter START1 bound to: 5'b01001 
+	Parameter WRSADDR1 bound to: 5'b01010 
+	Parameter ACK3 bound to: 5'b01011 
+	Parameter RDDATA bound to: 5'b01100 
+	Parameter NOACK bound to: 5'b01101 
+	Parameter WRRADDR_H bound to: 5'b01110 
+	Parameter ACK4 bound to: 5'b01111 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Driver_IIC.v:333]
+WARNING: [Synth 8-5788] Register IIC_Read_Data_reg in module Driver_IIC is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Driver_IIC.v:401]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_IIC' (5#1) [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Driver_IIC.v:22]
+INFO: [Synth 8-6157] synthesizing module 'qspi_slave' [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/qspi_slave.v:3]
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter addr_width bound to: 32 - type: integer 
+	Parameter dummy bound to: 4 - type: integer 
+	Parameter INS_QWrite_Quad bound to: 8'b00110010 
+	Parameter INS_FRead_Quad bound to: 8'b01101011 
+INFO: [Synth 8-6155] done synthesizing module 'qspi_slave' (6#1) [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/qspi_slave.v:3]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [D:/shixi/Gyro2AWSIoT/Gyro2AWSIoT.runs/synth_2/.Xil/Vivado-9940-Zxrcoming/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (7#1) [D:/shixi/Gyro2AWSIoT/Gyro2AWSIoT.runs/synth_2/.Xil/Vivado-9940-Zxrcoming/realtime/blk_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (8) of module 'blk_mem_gen_0' [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Gyro_Demo.v:163]
+WARNING: [Synth 8-689] width (32) of port connection 'addrb' does not match port width (8) of module 'blk_mem_gen_0' [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Gyro_Demo.v:168]
+INFO: [Synth 8-6157] synthesizing module 'Gyro2ram' [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Gyro2ram.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Gyro2ram' (8#1) [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Gyro2ram.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'addr' does not match port width (8) of module 'Gyro2ram' [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Gyro_Demo.v:196]
+INFO: [Synth 8-6155] done synthesizing module 'Gyro_Demo' (9#1) [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Gyro_Demo.v:23]
+WARNING: [Synth 8-3917] design Gyro_Demo has port IIC_OE driven by constant 1
+WARNING: [Synth 8-3917] design Gyro_Demo has port VCCEN driven by constant 1
+WARNING: [Synth 8-3917] design Gyro_Demo has port VCC driven by constant 1
+WARNING: [Synth 8-3917] design Gyro_Demo has port GND driven by constant 0
+WARNING: [Synth 8-3331] design Gyro2ram has unconnected port data_in[7]
+WARNING: [Synth 8-3331] design Gyro2ram has unconnected port data_in[6]
+WARNING: [Synth 8-3331] design Gyro2ram has unconnected port data_in[5]
+WARNING: [Synth 8-3331] design Gyro2ram has unconnected port data_in[4]
+WARNING: [Synth 8-3331] design Gyro2ram has unconnected port data_in[3]
+WARNING: [Synth 8-3331] design Gyro2ram has unconnected port data_in[2]
+WARNING: [Synth 8-3331] design Gyro2ram has unconnected port data_in[1]
+WARNING: [Synth 8-3331] design Gyro2ram has unconnected port data_in[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 752.246 ; gain = 245.445
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 753.488 ; gain = 246.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 753.488 ; gain = 246.688
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/shixi/Gyro2AWSIoT/Gyro2AWSIoT.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_10'
+Finished Parsing XDC File [d:/shixi/Gyro2AWSIoT/Gyro2AWSIoT.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_10'
+Parsing XDC File [d:/shixi/Gyro2AWSIoT/Gyro2AWSIoT.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'u_blk_mem_gen_0'
+Finished Parsing XDC File [d:/shixi/Gyro2AWSIoT/Gyro2AWSIoT.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'u_blk_mem_gen_0'
+Parsing XDC File [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/system.xdc]
+WARNING: [Vivado 12-507] No nets matched 'I_qspi_clk_IBUF'. [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/system.xdc:22]
+Finished Parsing XDC File [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/system.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/system.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Gyro_Demo_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/system.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Gyro_Demo_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Gyro_Demo_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 886.742 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 886.742 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_blk_mem_gen_0' at clock pin 'clkb' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 887.715 ; gain = 380.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s15ftgb196-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 887.715 ; gain = 380.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  d:/shixi/Gyro2AWSIoT/Gyro2AWSIoT.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  d:/shixi/Gyro2AWSIoT/Gyro2AWSIoT.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property DONT_TOUCH = true for clk_10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_blk_mem_gen_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 887.715 ; gain = 380.914
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'Init_State_reg' in module 'Driver_Gyro'
+INFO: [Synth 8-802] inferred FSM for state register 'Gyro_State_reg' in module 'Driver_Gyro'
+INFO: [Synth 8-802] inferred FSM for state register 'Mag_State_reg' in module 'Driver_Gyro'
+INFO: [Synth 8-5544] ROM "Reg_Addr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Flag_State_Init" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Gyro_Data_Z_FIFO" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Gyro_Data_X_FIFO" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Gyro_Data_Y_FIFO" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Mag_Data_Z_FIFO" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Mag_Data_Y_FIFO" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Mag_Data_X_FIFO" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'c_state_reg' in module 'Driver_IIC'
+INFO: [Synth 8-5546] ROM "SDA_Dir" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'R_qspi_io1_out_en_reg' into 'R_qspi_io0_out_en_reg' [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/qspi_slave.v:48]
+INFO: [Synth 8-4471] merging register 'R_qspi_io2_out_en_reg' into 'R_qspi_io0_out_en_reg' [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/qspi_slave.v:49]
+INFO: [Synth 8-4471] merging register 'R_qspi_io3_out_en_reg' into 'R_qspi_io0_out_en_reg' [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/qspi_slave.v:50]
+INFO: [Synth 8-4471] merging register 'mem_reg[15][7:0]' into 'mem_reg[14][7:0]' [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Gyro2ram.v:72]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE5 |                     000000000001 |                             0000
+                 iSTATE4 |                     000000000010 |                             0001
+                 iSTATE1 |                     000000000100 |                             0010
+                  iSTATE |                     000000001000 |                             0011
+                 iSTATE0 |                     000000010000 |                             0100
+                iSTATE10 |                     000000100000 |                             0101
+                 iSTATE9 |                     000001000000 |                             0110
+                 iSTATE7 |                     000010000000 |                             0111
+                 iSTATE8 |                     000100000000 |                             1000
+                 iSTATE6 |                     001000000000 |                             1001
+                 iSTATE3 |                     010000000000 |                             1010
+                 iSTATE2 |                     100000000000 |                             1011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Init_State_reg' using encoding 'one-hot' in module 'Driver_Gyro'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                           000001 |                              000
+                 iSTATE0 |                           000010 |                              001
+                 iSTATE1 |                           000100 |                              010
+                 iSTATE2 |                           001000 |                              011
+                 iSTATE3 |                           010000 |                              100
+                 iSTATE4 |                           100000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Gyro_State_reg' using encoding 'one-hot' in module 'Driver_Gyro'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                           000001 |                              000
+                 iSTATE0 |                           000010 |                              001
+                 iSTATE1 |                           000100 |                              010
+                 iSTATE2 |                           001000 |                              011
+                 iSTATE3 |                           010000 |                              100
+                 iSTATE4 |                           100000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Mag_State_reg' using encoding 'one-hot' in module 'Driver_Gyro'
+WARNING: [Synth 8-327] inferring latch for variable 'Enable_reg' [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Driver_Gyro.v:141]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0000 |                            00000
+                  START0 |                             0001 |                            00001
+                WRSADDR0 |                             0010 |                            00010
+                    ACK0 |                             0011 |                            00011
+               WRRADDR_H |                             0100 |                            01110
+                    ACK4 |                             0101 |                            01111
+                 WRRADDR |                             0110 |                            00100
+                    ACK1 |                             0111 |                            00101
+                  WRDATA |                             1000 |                            00110
+                    ACK2 |                             1001 |                            00111
+                  START1 |                             1010 |                            01001
+                WRSADDR1 |                             1011 |                            01010
+                    ACK3 |                             1100 |                            01011
+                  RDDATA |                             1101 |                            01100
+                   NOACK |                             1110 |                            01101
+                    STOP |                             1111 |                            01000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encoding 'sequential' in module 'Driver_IIC'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 887.715 ; gain = 380.914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 8     
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 21    
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 30    
++---Muxes : 
+	  12 Input     16 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 6     
+	   2 Input     16 Bit        Muxes := 14    
+	   4 Input     16 Bit        Muxes := 6     
+	   2 Input     10 Bit        Muxes := 1     
+	  12 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 17    
+	   6 Input      8 Bit        Muxes := 4     
+	  13 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 40    
+	   3 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
+	  16 Input      4 Bit        Muxes := 3     
+	   4 Input      3 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 53    
+	  12 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 6     
+	   6 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 3     
+	  13 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Clk_Division 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module Driver_Gyro 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 8     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	  12 Input     16 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 6     
+	   2 Input     16 Bit        Muxes := 14    
+	   4 Input     16 Bit        Muxes := 6     
+	  12 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 11    
+	   6 Input      8 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   4 Input      3 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 34    
+	  12 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 6     
+	   6 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 2     
+Module Driver_IIC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	  13 Input      8 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 35    
+	  16 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 2     
+Module qspi_slave 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module Gyro2ram 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 16    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 20 (col length:20)
+BRAMs: 20 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'Clk_Division1/Is_Odd_reg' into 'Clk_Division0/Is_Odd_reg' [D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Clk_Division.v:37]
+WARNING: [Synth 8-3917] design Gyro_Demo has port IIC_OE driven by constant 1
+WARNING: [Synth 8-3917] design Gyro_Demo has port VCCEN driven by constant 1
+WARNING: [Synth 8-3917] design Gyro_Demo has port VCC driven by constant 1
+WARNING: [Synth 8-3917] design Gyro_Demo has port GND driven by constant 0
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Driver_Gyro0/Clk_Division0/Is_Odd_reg )
+INFO: [Synth 8-3886] merging instance 'u_Gyro2ram/mem_reg[14][0]' (FDE) to 'u_Gyro2ram/mem_reg[14][7]'
+INFO: [Synth 8-3886] merging instance 'u_Gyro2ram/mem_reg[14][1]' (FDE) to 'u_Gyro2ram/mem_reg[14][7]'
+INFO: [Synth 8-3886] merging instance 'u_Gyro2ram/mem_reg[14][2]' (FDE) to 'u_Gyro2ram/mem_reg[14][7]'
+INFO: [Synth 8-3886] merging instance 'u_Gyro2ram/mem_reg[14][3]' (FDE) to 'u_Gyro2ram/mem_reg[14][7]'
+INFO: [Synth 8-3886] merging instance 'u_Gyro2ram/mem_reg[14][4]' (FDE) to 'u_Gyro2ram/mem_reg[14][7]'
+INFO: [Synth 8-3886] merging instance 'u_Gyro2ram/mem_reg[14][5]' (FDE) to 'u_Gyro2ram/mem_reg[14][7]'
+INFO: [Synth 8-3886] merging instance 'u_Gyro2ram/mem_reg[14][6]' (FDE) to 'u_Gyro2ram/mem_reg[14][7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_Gyro2ram/mem_reg[14][7] )
+INFO: [Synth 8-3886] merging instance 'u_Gyro2ram/addr_reg[4]' (FD) to 'u_Gyro2ram/addr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_Gyro2ram/addr_reg[5]' (FD) to 'u_Gyro2ram/addr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_Gyro2ram/addr_reg[6]' (FD) to 'u_Gyro2ram/addr_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_Gyro2ram/addr_reg[7] )
+INFO: [Synth 8-3886] merging instance 'Driver_Gyro0/Reg_Addr_reg[15]' (FDRE_1) to 'Driver_Gyro0/Reg_Addr_reg[14]'
+INFO: [Synth 8-3886] merging instance 'Driver_Gyro0/Reg_Addr_reg[14]' (FDRE_1) to 'Driver_Gyro0/Reg_Addr_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Driver_Gyro0/Reg_Addr_reg[13]' (FDRE_1) to 'Driver_Gyro0/Reg_Addr_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Driver_Gyro0/Reg_Addr_reg[12]' (FDRE_1) to 'Driver_Gyro0/Reg_Addr_reg[11]'
+INFO: [Synth 8-3886] merging instance 'Driver_Gyro0/Reg_Addr_reg[11]' (FDRE_1) to 'Driver_Gyro0/Reg_Addr_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Driver_Gyro0/Reg_Addr_reg[10]' (FDRE_1) to 'Driver_Gyro0/Reg_Addr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'Driver_Gyro0/Reg_Addr_reg[9]' (FDRE_1) to 'Driver_Gyro0/Reg_Addr_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Driver_Gyro0/Reg_Addr_reg[8]' (FDRE_1) to 'Driver_Gyro0/Reg_Addr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Driver_Gyro0/Reg_Data_reg[7]' (FDE_1) to 'Driver_Gyro0/Reg_Data_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Driver_Gyro0/Reg_Data_reg[1] )
+INFO: [Synth 8-3886] merging instance 'Driver_Gyro0/Reg_Data_reg[0]' (FDE_1) to 'Driver_Gyro0/FSM_onehot_Init_State_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Driver_Gyro0/Reg_Addr_reg[7]' (FDRE_1) to 'Driver_Gyro0/Reg_Addr_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Driver_Gyro0/Reg_Addr_reg[6] )
+INFO: [Synth 8-3886] merging instance 'Driver_Gyro0/Current_State_reg[3]' (FDE) to 'Driver_Gyro0/Current_State_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Driver_Gyro0/Current_State_reg[2] )
+INFO: [Synth 8-3886] merging instance 'Driver_IIC0/scl_cnt_reg[10]' (FDC) to 'Driver_IIC0/scl_cnt_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Driver_IIC0/scl_cnt_reg[11]' (FDC) to 'Driver_IIC0/scl_cnt_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Driver_IIC0/scl_cnt_reg[12]' (FDC) to 'Driver_IIC0/scl_cnt_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Driver_IIC0/scl_cnt_reg[13] )
+WARNING: [Synth 8-3332] Sequential element (Driver_Gyro0/FSM_onehot_Init_State_reg[11]) is unused and will be removed from module Gyro_Demo.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 887.715 ; gain = 380.914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_10/clk_out1' to pin 'clk_10/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_10/clk_out2' to pin 'clk_10/bbstub_clk_out2/O'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 887.715 ; gain = 380.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 887.715 ; gain = 380.914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 887.715 ; gain = 380.914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module clk_10 has unconnected pin reset
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 887.715 ; gain = 380.914
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 887.715 ; gain = 380.914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 887.715 ; gain = 380.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 887.715 ; gain = 380.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 887.715 ; gain = 380.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 887.715 ; gain = 380.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |blk_mem_gen_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |blk_mem_gen_0 |     1|
+|2     |clk_wiz_0     |     1|
+|3     |BUFG          |     2|
+|4     |CARRY4        |    18|
+|5     |LUT1          |     7|
+|6     |LUT2          |    23|
+|7     |LUT3          |    58|
+|8     |LUT4          |    36|
+|9     |LUT5          |    33|
+|10    |LUT6          |   125|
+|11    |FDCE          |    63|
+|12    |FDPE          |     3|
+|13    |FDRE          |   352|
+|14    |FDSE          |     1|
+|15    |LD            |     1|
+|16    |IBUF          |     2|
+|17    |IOBUF         |     5|
+|18    |OBUF          |     5|
++------+--------------+------+
+
+Report Instance Areas: 
++------+------------------+---------------+------+
+|      |Instance          |Module         |Cells |
++------+------------------+---------------+------+
+|1     |top               |               |   753|
+|2     |  Driver_Gyro0    |Driver_Gyro    |   338|
+|3     |    Clk_Division0 |Clk_Division   |    50|
+|4     |    Clk_Division1 |Clk_Division_0 |    50|
+|5     |  Driver_IIC0     |Driver_IIC     |   120|
+|6     |  u_Gyro2ram      |Gyro2ram       |   161|
+|7     |  u_qspi_slave    |qspi_slave     |   101|
++------+------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 887.715 ; gain = 380.914
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 887.715 ; gain = 246.688
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 887.715 ; gain = 380.914
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 890.930 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 5 instances
+  LD => LDCE: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+93 Infos, 28 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:43 . Memory (MB): peak = 890.930 ; gain = 587.578
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 890.930 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/shixi/Gyro2AWSIoT/Gyro2AWSIoT.runs/synth_2/Gyro_Demo.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Gyro_Demo_utilization_synth.rpt -pb Gyro_Demo_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 31 17:38:09 2020...

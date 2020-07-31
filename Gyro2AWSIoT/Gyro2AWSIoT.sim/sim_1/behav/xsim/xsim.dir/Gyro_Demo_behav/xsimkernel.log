@@ -1,0 +1,7 @@
+Running: xsim.dir/Gyro_Demo_behav/xsimk.exe -simmode gui -wdb Gyro_Demo_behav.wdb -simrunnum 0 -socket 58880
+Design successfully loaded
+Design Loading Memory Usage: 6816 KB (Peak: 6816 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 8232 KB (Peak: 8232 KB)
+Simulation CPU Usage: 46 ms

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_2" LaunchPart="xc7s15ftgb196-1" LaunchTime="1596188236">
+  <File Type="PA-TCL" Name="Gyro_Demo.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Gyro_Demo_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="Gyro_Demo_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Gyro_Demo.vds"/>
+  <File Type="RDS-UTIL" Name="Gyro_Demo_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Gyro_Demo_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Gyro_Demo.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Gyro_Demo_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Gyro_Demo_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Clk_Division.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Driver_Gyro.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Driver_IIC.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Gyro2ram.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/qspi_slave.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Gyro_Demo.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Gyro_Demo"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/system.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
+</GenRun>

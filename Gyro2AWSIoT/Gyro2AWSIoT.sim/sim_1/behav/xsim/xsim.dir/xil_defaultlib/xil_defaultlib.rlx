@@ -1,0 +1,15 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/shixi/Gyro2AWSIoT/Gyro2AWSIoT.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/shixi/Gyro2AWSIoT/Gyro2AWSIoT.srcs/sim_1/new/testbench.v,1595940721,verilog,,,,testbench,,,../../../../Gyro2AWSIoT.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/shixi/Gyro2AWSIoT/Gyro2AWSIoT.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1595833906,verilog,,D:/shixi/Gyro2AWSIoT/Gyro2AWSIoT.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,,blk_mem_gen_0,,,../../../../Gyro2AWSIoT.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/shixi/Gyro2AWSIoT/Gyro2AWSIoT.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1595825299,verilog,,D:/shixi/Gyro2AWSIoT/Gyro2AWSIoT.srcs/sim_1/new/testbench.v,,clk_wiz_0,,,../../../../Gyro2AWSIoT.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/shixi/Gyro2AWSIoT/Gyro2AWSIoT.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1595825299,verilog,,D:/shixi/Gyro2AWSIoT/Gyro2AWSIoT.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../Gyro2AWSIoT.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Clk_Division.v,1573555848,verilog,,D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Driver_Gyro.v,,Clk_Division,,,../../../../Gyro2AWSIoT.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Driver_Gyro.v,1573555832,verilog,,D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Driver_IIC.v,,Driver_Gyro,,,../../../../Gyro2AWSIoT.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Driver_IIC.v,1573556054,verilog,,D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Gyro2ram.v,,Driver_IIC,,,../../../../Gyro2AWSIoT.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Gyro2ram.v,1584401543,verilog,,D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Gyro_Demo.v,,Gyro2ram,,,../../../../Gyro2AWSIoT.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/Gyro_Demo.v,1595929452,verilog,,D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/qspi_slave.v,,Gyro_Demo,,,../../../../Gyro2AWSIoT.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/shixi/SEA-master-latest/SEA-master/Demos/2.IoT/Gyro2AWSloT/FPGA_Project/qspi_slave.v,1584318542,verilog,,D:/shixi/Gyro2AWSIoT/Gyro2AWSIoT.srcs/sim_1/new/testbench.v,,qspi_slave,,,../../../../Gyro2AWSIoT.srcs/sources_1/ip/clk_wiz_0,,,,,

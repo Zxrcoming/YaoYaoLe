@@ -30,5 +30,5 @@
 
 __这是现阶段的demo__
 
-![demo](demo.gif)
+![demo](demo_latest.gif)
 

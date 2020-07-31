@@ -146,13 +146,13 @@ mqttClient.on("message", function (topic, payload) {
   var y = hex2int(Gyro_data.Attitude_angle_data.Y);
   var z = hex2int(Gyro_data.Attitude_angle_data.Z);
 
-  x = ((x * 2.0) / 245) * 0.2;
-  y = ((y * 2.0) / 245) * 0.2;
-  z = ((z * 2.0) / 245) * 0.2;
+  x = ((x * 2.0) / 245) * 0.05;
+  y = ((y * 2.0) / 245) * 0.05;
+  z = ((z * 2.0) / 245) * 0.05;
 
-  X_total += x;
-  Y_total += y;
-  Z_total += z;
+  X_total += -y;
+  Y_total += -z;
+  Z_total += -x;
 
   console.log("x", x, "y", y, "z", z);
   document.getElementById("cube").style.cssText =

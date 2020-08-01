@@ -1,6 +1,6 @@
 # 摇摇乐
 
-  >  [English](README_EN.md)|中文
+  > #### [English](README_EN.md)|中文
   >
   >  这是一个基于FPGA的“摇摇乐”3D实时姿态同步工具。 
   >

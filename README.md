@@ -1,4 +1,4 @@
-- # 摇摇乐
+# 摇摇乐
 
   >  [English](README_EN.md)|中文
   >

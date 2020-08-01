@@ -25,7 +25,7 @@ This is the structure diagram of the project components
 
 这是项目组件的结构框图
 
-![system](system.jpg)
+![system](system_latest.jpg)
 
 
 

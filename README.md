@@ -4,19 +4,22 @@
 >
 >  2020年新工科联盟-Xilinx暑期学校（Summer School）项目
 
-### Inctroduction
-
-##### Project Description 项目简介
-
-​		This project is a 3D posture simulation project based on `FPGA`. It reads the posture data of the onboard gyroscope and uploads it to the remote server to display the 3D posture model. This is a real-time attitude transmission system, which can upload the attitude information (how to rotate, etc.) of the device (`Sea-Board`) networked via `WiFi` to a remote server for display. The display method is a real-time 3D model: a Six-sided cube cube (currently still a short version).
+---
 
 
+## Inctroduction 介绍
 
-​		本项目是一个基于`FPGA`的3D姿态模拟项目，通过读取板载陀螺仪的姿态数据，上传至远程服务器，展示3D姿态模型。这是一个实时的姿态传输系统，能够将通过`WiFi`联网的设备(`Sea-Board`)的姿态信息（如何转动等）上传至远程服务器进行展示，展示的方式是实时的3D模型：一个六面的方块cube（目前还是简略版）。
+#### Project Description 项目简介
+
+- This project is a 3D posture simulation project based on `FPGA`. It reads the posture data of the onboard gyroscope and uploads it to the remote server to display the 3D posture model. This is a real-time attitude transmission system, which can upload the attitude information (how to rotate, etc.) of the device (`Sea-Board`) networked via `WiFi` to a remote server for display. The display method is a real-time 3D model: a Six-sided cube cube (currently still a short version).
 
 
 
-##### Project system 项目系统
+- 本项目是一个基于`FPGA`的3D姿态模拟项目，通过读取板载陀螺仪的姿态数据，上传至远程服务器，展示3D姿态模型。这是一个实时的姿态传输系统，能够将通过`WiFi`联网的设备(`Sea-Board`)的姿态信息（如何转动等）上传至远程服务器进行展示，展示的方式是实时的3D模型：一个六面的方块cube（目前还是简略版）。
+
+
+
+#### Project system 项目系统
 
 This is the structure diagram of the project components
 
@@ -30,11 +33,11 @@ This is the structure diagram of the project components
 
 
 
-### Install
+## Install 安装
 
-​		This project uses [Vivado(2019.1)](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2019-1.html) and [Arduino(1.8.13)](https://www.arduino.cc/en/Main/Software). Go check them out if you don't have them locally installed.
+- This project uses [Vivado(2019.1)](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2019-1.html) and [Arduino(1.8.13)](https://www.arduino.cc/en/Main/Software). Go check them out if you don't have them locally installed.
 
-​		该项目使用[Vivado(2019.1)](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2019-1.html)和[Arduino(1.8.13)](https://www.arduino.cc/en/Main/Software)。 如果您没有在本地安装它们，请点击链接下载安装。
+- 该项目使用[Vivado(2019.1)](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2019-1.html)和[Arduino(1.8.13)](https://www.arduino.cc/en/Main/Software)。 如果您没有在本地安装它们，请点击链接下载安装。
 
 
 
@@ -42,7 +45,7 @@ This is the structure diagram of the project components
 
 
 
-### Deployment steps
+## Deployment steps 实现步骤
 
 - The onboard gyroscope transmits the original gyroscope attitude data through the IIC and gyroscope drive module.
 
@@ -68,7 +71,7 @@ This is the structure diagram of the project components
 
 
 
-### Project demo
+## Project demo 项目演示
 
 This is the demo at this stage
 
@@ -82,15 +85,15 @@ This is the demo at this stage
 
 
 
-### Project expand
+## Project expand 项目拓展
 
-​		On the HTML webpage displayed in real-time posture, the `cube` can be replaced with various 3D objects (such as steering wheels, cars, cartoon characters, tumblers, etc.). 
+- On the HTML webpage displayed in real-time posture, the `cube` can be replaced with various 3D objects (such as steering wheels, cars, cartoon characters, tumblers, etc.). 
 
-​		By modifying the model on the webpage, or adding some interactions, you can simulate driving, play a tumbler, etc., realize many expansion functions, and exert great potential.
+- By modifying the model on the webpage, or adding some interactions, you can simulate driving, play a tumbler, etc., realize many expansion functions, and exert great potential.
 
-​		在实时姿态展示的HTML网页上，`cube`六面魔方可以替换为各类3D物样（如方向盘，小车，卡通人物，不倒翁等等）。
+- 在实时姿态展示的HTML网页上，`cube`六面魔方可以替换为各类3D物样（如方向盘，小车，卡通人物，不倒翁等等）。
 
-​		通过修改网页上的模型，或增添一些交互，可以模拟开车，玩不倒翁等等，实现许多拓展功能，发挥潜力很大。
+- 通过修改网页上的模型，或增添一些交互，可以模拟开车，玩不倒翁等等，实现许多拓展功能，发挥潜力很大。
 
 
 
@@ -98,9 +101,9 @@ This is the demo at this stage
 
 
 
-### Change Log
+## Change Log
 
-##### v0.1.1
+#### v0.1.1
 
 - Modified the three-axis angular velocity data transmission relationship, and solved the problem that the on-board gyroscope is synchronized with the flip direction of the webpage `cube`.
 - Updated and improved the structure of the project system.
@@ -111,7 +114,7 @@ This is the demo at this stage
 
   
 
-##### v0.1.2
+#### v0.1.2
 
 - The refresh rate has been updated and the sensitivity of the `cube` rotation has been optimized.
 

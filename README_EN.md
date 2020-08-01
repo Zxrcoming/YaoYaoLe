@@ -1,6 +1,6 @@
 # YaoYaoLe
 
-  >  English|[中文](README.md)
+  > #### English|[中文](README.md)
   >
   >  This is an FPGA-based "shaking music" 3D real-time attitude synchronization tool.
   >

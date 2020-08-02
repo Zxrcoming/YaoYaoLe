@@ -6,7 +6,7 @@
   >
   >  2020年新工科联盟-Xilinx暑期学校（Summer School）项目
 
-  ---
+---
 
 
   ## 介绍
@@ -21,11 +21,11 @@
 
   这是项目组件的结构框图
 
-  ![system](system_latest.jpg)
+  ![system](images/system_latest.jpg)
 
   
 
-  ---
+---
 
   
 
@@ -35,7 +35,7 @@
 
   
 
-  ---
+---
 
   
 
@@ -51,7 +51,7 @@
 
   
 
-  ---
+---
 
   
 
@@ -59,11 +59,11 @@
 
   这是现阶段的demo
 
-  ![demo](demo_latest.gif)
+  ![demo](images/demo_latest.gif)
 
   
 
-  ---
+---
 
   
 
@@ -75,7 +75,7 @@
 
   
 
-  ---
+---
 
   
 

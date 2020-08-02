@@ -6,7 +6,7 @@
   >
   >  2020 New Engineering Alliance-Xilinx Summer School (Summer School) project
 
-  ---
+---
 
 
   ## Inctroduction
@@ -21,11 +21,11 @@
 
   This is the structure diagram of the project components
 
-  ![system](system_latest.jpg)
+  ![system](images/system_latest.jpg)
 
   
 
-  ---
+---
 
   
 
@@ -34,9 +34,8 @@
   - This project uses [Vivado(2019.1)](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2019-1.html) and [Arduino(1.8.13)](https://www.arduino.cc/en/Main/Software). Go check them out if you don't have them locally installed.
 
 
-  
 
-  ---
+---
 
   
 
@@ -53,9 +52,8 @@
   - Use the `IoT` cloud `Web API` to transfer cloud data to other web services (web server in this project), which is used to present the `cube` 3D posture online simulation.
 
 
-  
 
-  ---
+---
 
   
 
@@ -63,11 +61,11 @@
 
   This is the demo at this stage
 
-  ![demo](demo_latest.gif)
+  ![demo](images/demo_latest.gif)
 
   
 
-  ---
+---
 
   
 
@@ -78,9 +76,8 @@
   - By modifying the model on the webpage, or adding some interactions, you can simulate driving, play a tumbler, etc., realize many expansion functions, and exert great potential.
 
 
-  
 
-  ---
+---
 
   
 

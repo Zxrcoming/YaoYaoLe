@@ -4,7 +4,7 @@
   >
   >  This is an FPGA-based "shaking music" 3D real-time attitude synchronization tool.
   >
-  >  2020 New Engineering Alliance-Xilinx Summer School (Summer School) project
+  >  2020 New Engineering Alliance-Xilinx Summer School project.
 
 ---
 
@@ -19,7 +19,7 @@
 
   #### Project system
 
-  This is the structure diagram of the project components
+  This is the structure diagram of the project components.
 
   ![system](images/system_latest.jpg)
 
